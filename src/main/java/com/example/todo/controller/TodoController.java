@@ -34,12 +34,5 @@ public class TodoController {
         todoService.deleteTodo(id);
         return "Todo deleted successfully";
     }
-    @Controller
-    public class PageController {
-
-        @GetMapping("/")
-        public String index() {
-            return "forward:/index.html";
-        }
-    }
+   
 }
